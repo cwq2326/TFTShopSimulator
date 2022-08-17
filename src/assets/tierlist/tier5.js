@@ -1,0 +1,58 @@
+export const tier5Pool = [
+  {
+    name: "Akshan",
+    championId: "TFT5_Akshan",
+    cost: 5,
+    traits: ["Set5_Sentinel", "Set5_Ranger"],
+    quantity: 10,
+  },
+  {
+    name: "Garen",
+    championId: "TFT5_Garen",
+    cost: 5,
+    traits: ["Set5_Victorious", "Set5_Dawnbringer", "Set5_Knight"],
+    quantity: 10,
+  },
+  {
+    name: "Gwen",
+    championId: "TFT5_Gwen",
+    cost: 5,
+    traits: ["Set5_Inanimate", "Set5_Mystic"],
+    quantity: 10,
+  },
+  {
+    name: "Heimerdinger",
+    championId: "TFT5_Heimerdinger",
+    cost: 5,
+    traits: ["Set5_Draconic", "Set5_Renewer", "Set5_Caretaker"],
+    quantity: 10,
+  },
+  {
+    name: "Kayle",
+    championId: "TFT5_Kayle",
+    cost: 5,
+    traits: ["Set5_Redeemed", "Set5_Legionnaire"],
+    quantity: 10,
+  },
+  {
+    name: "Teemo",
+    championId: "TFT5_Teemo",
+    cost: 5,
+    traits: ["Set5_Cruel", "Set5_Hellion", "Set5_Invoker"],
+    quantity: 10,
+  },
+  {
+    name: "Viego",
+    championId: "TFT5_Viego",
+    cost: 5,
+    traits: ["Set5_Forgotten", "Set5_Skirmisher", "Set5_Assassin"],
+    quantity: 10,
+  },
+  {
+    name: "Volibear",
+    championId: "TFT5_Volibear",
+    cost: 5,
+    traits: ["Set5_Revenant", "Set5_Brawler"],
+    quantity: 10,
+  },
+];
