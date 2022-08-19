@@ -1,0 +1,12 @@
+.shop {
+    border: solid black 5px;
+    max-width: 50%;
+    text-align: center;
+    display: flex;
+}
+
+.slot {
+    border: black 2px solid;
+    margin: 1px;
+    width: 100px;
+}

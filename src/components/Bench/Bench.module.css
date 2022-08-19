@@ -1,0 +1,13 @@
+.bench {
+    border: solid black 5px;
+    max-width: 50%;
+    text-align: center;
+    display: flex;
+    margin: 0 0 10px 0;
+}
+
+.slot {
+    border: black 2px solid;
+    margin: 1px;
+    width: 100px;
+}
