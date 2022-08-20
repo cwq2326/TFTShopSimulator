@@ -5,7 +5,7 @@ import {tier4Pool} from "../assets/tierlist/tier4";
 import {tier5Pool} from "../assets/tierlist/tier5";
 
 
-export const getTierIndex = (tier, unit) => {
+export const getUnitPoolIndex = (tier, unit) => {
     switch (tier){
         case 1:
             return tier1Pool.findIndex(x => unit.name === x.name)

@@ -2,7 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 
 import classes from "./ShopSlot.module.css"
 import {benchActions} from "../../store/bench-slice";
-import {ShopActions} from "../../store/shop-slice";
+import {poolActions} from "../../store/pool-slice";
 
 const ShopSlot = (props) => {
 
@@ -15,15 +15,18 @@ const ShopSlot = (props) => {
             const x = {...props.unit, grade: 1}
             dispatch(benchActions.addUnitToBench(x))
             dispatch(benchActions.setLastAdded(x))
-            dispatch(ShopActions.removeUnitFromShopSlot(props.index))
+            dispatch(poolActions.removeUnitFromShopSlot(props.index))
         }
     }
 
-    return <div onClick={handleClick} className={classes.slot}>
-        <img src={require(`../../assets/champions/${championId}.png`)} />
-        <p>{name}</p>
-        <p>{"$"+cost}</p>
-    </div>
+    return (
+        <div onClick={handleClick} className={classes.slot}>
+            <img src={require(`../../assets/champions/${championId}.png`)}/>
+            <div className={classes.border}>
+                <p className={classes["unit-name"]}>{name}</p>
+                <p className={classes["unit-cost"]}>{"$" + cost}</p>
+            </div>
+        </div>)
 }
 
 export default ShopSlot

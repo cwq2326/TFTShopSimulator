@@ -8,8 +8,7 @@ const level7Odds = [19, 30, 35, 15, 1];
 const level8Odds = [16, 20, 35, 25, 4];
 const level9Odds = [9, 15, 30, 30, 16];
 const level10Odds = [5, 10, 20, 40, 25];
-// const level11Odds = [1, 2, 12, 50, 35];
-const level11Odds = [0, 0, 0, 0, 100  ];
+const level11Odds = [1, 2, 12, 50, 35];
 
 export const odds = [
     level1Odds,

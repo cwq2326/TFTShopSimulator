@@ -9,5 +9,5 @@
 .slot {
     border: black 2px solid;
     margin: 1px;
-    width: 100px;
+    min-width: 75px;
 }
