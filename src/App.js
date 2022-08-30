@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Bench from "./components/Bench/Bench";
 import Shop from "./components/Shop/Shop";
@@ -8,9 +8,10 @@ function App() {
     return (
         <div>
             <Profile />
-            <Bench/>
-            <Shop/>
-        </div>);
+            <Bench />
+            <Shop />
+        </div>
+    );
 }
 
 export default App;
