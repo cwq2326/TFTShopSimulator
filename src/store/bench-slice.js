@@ -31,6 +31,9 @@ const benchSlice = createSlice({
             state.slots[indexes[1]] = null
             state.slots[indexes[2]] = null
             state.lastAdded = state.slots[indexes[0]]
+        },
+        combineFullBenchUnit(state, action) {
+
         }
     }
 })

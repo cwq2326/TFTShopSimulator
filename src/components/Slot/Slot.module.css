@@ -1,0 +1,53 @@
+.slot {
+    position: relative;
+    border: white 2px solid;
+    margin: 3px;
+}
+
+.slot:hover {
+    opacity: 80%;
+}
+
+img {
+    position: relative;
+}
+
+.border {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 0%;
+}
+
+.unit-name {
+    margin: auto auto auto 5px;
+    left: 5px;
+    color: white;
+}
+
+.unit-grade {
+    margin: auto 5px auto auto;
+    color: yellow;
+    right: 5px;
+}
+
+.tier-1 {
+    background-color: blue;
+}
+
+.tier-2 {
+    background-color: green;
+}
+
+.tier-3 {
+    background-color: dodgerblue;
+}
+
+.tier-4 {
+    background-color: purple;
+}
+
+.tier-5 {
+    background-color: gold;
+}

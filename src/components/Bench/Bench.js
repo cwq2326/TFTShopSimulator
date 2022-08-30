@@ -36,7 +36,7 @@ const Bench = () => {
         <h1>Bench</h1>
         {bench.map((unit, index) => {
             return unit ? <BenchSlot index={index} unit={unit}>{unit.name}</BenchSlot> :
-                <p className={classes.slot}>null</p>
+                <p className={classes.slot}></p>
         })}
     </div>
 }

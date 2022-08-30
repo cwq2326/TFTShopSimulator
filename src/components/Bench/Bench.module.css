@@ -1,13 +1,15 @@
 .bench {
     border: solid black 5px;
-    max-width: 50%;
+    max-width: min-content;
     text-align: center;
     display: flex;
     margin: 0 0 10px 0;
+    background-color: black;
 }
 
 .slot {
-    border: black 2px solid;
-    margin: 1px;
-    min-width: 75px;
+    border: dimgrey 2px solid;
+    margin: 3px;
+    min-width: 120px;
+    min-height: 120px;
 }
