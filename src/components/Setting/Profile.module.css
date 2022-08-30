@@ -1,0 +1,17 @@
+.odds {
+    list-style: none;
+    display: flex;
+}
+
+.odds li {
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.shop-name {
+    margin-right: 2rem;
+}

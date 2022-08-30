@@ -1,7 +1,9 @@
+import React from "react";
 import {useSelector, useDispatch} from "react-redux";
 
-import {getTierOdds, odds} from "../../api/tier-odds";
+import {odds} from "../../api/tier-odds";
 import {settingActions} from "../../store/setting-slice";
+import classes from "./Profile.module.css"
 
 const LEVELS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
@@ -15,14 +17,19 @@ const Profile = () => {
     }
 
     return <div>
-        <h1>Player level is {playerLevel}</h1>
+        <div className={classes.container}>
+        <h1 className={classes["shop-name"]}>Shop level: {playerLevel}</h1>
+        <label>Select level: </label>
         <select name="level" onChange={handleSelectLevel}>
             {LEVELS.map(x => <option key={x} value={x}>{x}</option>)}
         </select>
-        <h2>Odds</h2>
-        <ul>
-            {odds[playerLevel - 1].map((x, index)=><li key={index}>{x}</li>)}
+        </div>
+        <div className={classes.container}>
+        <h4>Odds: </h4>
+        <ul className={classes.odds}>
+            {odds[playerLevel - 1].map((x, index)=><li key={index}>{`Tier ${index}: ${x}`}</li>)}
         </ul>
+        </div>
     </div>
 }
 
